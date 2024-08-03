@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set the page title -->
+  <title>Happy Home Contracting</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/favicon.png" type="image/svg+xml" />
+
+  <!-- Citation -->
+  <!-- Hero Image: https://unsplash.com/photos/three-person-holding-beverage-cups-6VhPY27jdps -->
+  <!-- Espresso Image: https://unsplash.com/photos/white-ceramic-coffee-mug-with-capuccino-6cY1xBGn9ZI -->
+  <!-- Latte Image: https://www.pexels.com/photo/shallow-focus-photography-of-cafe-late-982612/ -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img id="house-logo" src="./images/HappyHomeLogo.png" width="31rem" height="34rem">
+        <p id="logoTxt">Happy Home Contracting</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Our Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span id="heroHHCTxt">Happy Home Contracting</span> </h1>
+      <p>Turn Your Living Space Into Your Happy Space <br> <span id="heroHHCTxt">Happy Home,</span> Happy Living </p>
+      <a href="#workSection" class="hero-button">Contact Us!</a>
+      <p id="heroSubtext">Contact us for free a free consultation!</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="about-us">
+      <div class="about-us-content">
+        <h3>About Us</h3>
+        <p>Our team of contractors here at Happy Home are commited to quality renovations. We offer painting, drywalling and landscaping work, with utmost care and perfection! <br> Our team is dedicated to doing servicae for the region of Ottawa and Gatineau. Unsure if you fall in our location? Give us a call and find out!  </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="painting">
+        <div class="paint-descr">
+          <h1>Painting</h1>
+          <p></p>
+        </div>
+        <div class="paint-img">
+          <img id="paintImg" src="./images/interior-painting-stock.jpg" alt="Interior house wall being painted.">
+        </div>
+
+        
+
+      </div>
+
+      <div class="drywalling"></div>
+      
+      <div class="landscaping"></div>
+
+    </section>
+
+
+
+
+    
+    <!-- <section id="menu" class="menu-selection">
+      <h2 id="workSection">Landscapping</h2>
+      <form id="menuForm">
+        <div class="menu-choice" id="espressoChoice">
+          <div>
+            <img class="menu-item-img" id="espresso-img" src="./images/espressocoffe2.jpg" alt="image of espresso shot">
+          </div>
+          <div class="menu-option">
+            <div class="menu-title">
+              <input type="checkbox" id="espresso" name="coffee" value="2.00" onchange="updatePrice()">
+              <label for="espresso">Espresso - $2.00</label>
+            </div>
+            <div class="submenu" id="espressoMenu">
+              <div>
+                <input type="checkbox" id="extraMilkEspresso" name="extraMilk" value="0.50" data-coffee="espresso"
+                  onchange="updatePrice()"> <label for="extraMilkEspresso">Extra Milk - $0.50</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sugarEspresso" name="sugar" value="0.25" data-coffee="espresso"
+                  onchange="updatePrice()"> <label for="sugarEspresso">Sugar - $0.25</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-choice" id="latteChoice">
+          <div>
+            <img class="menu-item-img" src="./images/lattecoffee.jpg" alt="Cup of Latte">
+          </div>
+          <div class="menu-option">
+            <div class="menu-title">
+              <input type="checkbox" id="latte" name="coffee" value="3.50" onchange="updatePrice()">
+              <label for="latte">Latte - $3.50</label>
+            </div>
+            <div class="submenu" id="latteMenu">
+              <div>
+                <input type="checkbox" id="extraMilkLatte" name="extraMilk" value="0.50" data-coffee="latte"
+                  onchange="updatePrice()">
+                <label for="extraMilkLatte">Extra Milk - $0.50</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sugarLatte" name="sugar" value="0.25" data-coffee="latte"
+                  onchange="updatePrice()">
+                <label for="sugarLatte">Sugar - $0.25</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-choice" id="americanoChoice">
+          <div>
+            <img class="menu-item-img" src="./images/americano.jpg" alt="Cup of Americano">
+          </div>
+          <div class="menu-option">
+            <div class="menu-title">
+              <input type="checkbox" id="americano" name="coffee" value="3.50" onchange="updatePrice()">
+              <label for="americano">Americano - $3.50</label>
+            </div>
+            <div class="submenu" id="americanoMenu">
+              <div>
+                <input type="checkbox" id="extraMilkAmericano" name="extraMilk" value="0.50" data-coffee="americano"
+                  onchange="updatePrice()">
+                <label for="extraMilkAmericano">Extra Milk - $0.50</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sugarAmericano" name="sugar" value="0.25" data-coffee="americano"
+                  onchange="updatePrice()">
+                <label for="sugarAmericano">Sugar - $0.25</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="menu-selection">
+      <h2>Painting</h2>
+      <form id="menuForm2">
+        <div class="menu-choice" id="danishChoice">
+          <div>
+            <img class="menu-item-img" id="danish-img" src="images/4danish.jpg" alt="image of 4 danishes">
+          </div>
+          <div class="menu-option">
+            <div class="menu-title">
+              <input type="checkbox" id="danish" name="coffee" value="4.00" onchange="updatePrice()">
+              <label for="danish">Danish - $4.00</label>
+            </div>
+
+            <div class="submenu" id="danishMenu">
+              <div>
+                <input type="checkbox" id="raspberryDanish" name="raspberry" value="4.00" data-coffee="raspberry"
+                  onchange="updatePrice()"> <label for="raspberryDanish">Raspberry</label>
+              </div>
+              <div>
+                <input type="checkbox" id="chocolateDanish" name="chocolate" value="4.00" data-coffee="chocolate"
+                  onchange="updatePrice()"> <label for="chocolateDanish">Chocolate</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      </section>
+
+      <section>
+        <div class="total-price" id="priceOrder">
+          <p>Total: <span id="totalPrice">$0.00</span></p>
+          <button type="button" id="submitOrder">Order Now</button>
+        </div>
+      </section>
+
+      <section id="orderDetails" class="order-details">
+        <h2>Order Details</h2>
+        <p id="orderMessage"></p>
+      </section> -->
+
+     
+
+      <!-- <section class="reviews">
+        <div class="customer-reviews-title">
+          <h3>Customer Reviews</h3>
+        </div>
+        <div class="customer-reviews">
+          <p>"I've searched high and low for the perfect espresso, and I found it at Coffee Heaven. The richness and
+            depth of flavor are unmatched"</p>
+        </div>
+        <div class="customer-reviews">
+          <p>"Aside from their fantastic coffee, Coffee Heaven offers the most delicious pastries and treats!"</p>
+        </div>
+        <div class="customer-reviews">
+          <p>"Whether it's a classic drip or a specialty blend, they nail it every time. Highly recommended!"</p>
+        </div>
+      </section> -->
+
+  </main>
+
+  <footer>
+    <div id="contact" class="footer-content">
+      <p>&copy; 2024 Happy Home Contracting. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- This is where we add our awesome JavaScript code -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
