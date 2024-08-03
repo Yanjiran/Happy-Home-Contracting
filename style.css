@@ -7,13 +7,13 @@ body,
 h1,
 h2,
 p {
-  margin: 0;
-  padding: 0;
+
   font-family: 'bandico', sans-serif;
 }
 
 body {
-  background: linear-gradient(to right, #fff9d1, #ac904f 100%);
+  /* background: linear-gradient(to right, #fff9d1, #ac904f 100%); */
+
 }
 
 .navbar {
@@ -108,60 +108,186 @@ body {
 }
 
 .about-us {
+  background-color: #fff9d1;
+  padding: 40px;
+}
+
+.about-us-content {
+  
   background-color: #04229ad3;
   color: white;
-  text-align: center;
-  padding: 20px;
-  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-  width: 90%;
   opacity: 0.8;
+
+  text-align: center;
+  padding: 40px;
+  margin-left: 100px; 
+  margin-right: 100px;
   font-size: 1.4rem;
 }
 
 .services {
-  border-style: solid;
-  border-color: black;
-  display: flex;
+  display: grid;
+  padding-top: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  row-gap: 80px;
+
+  background-color: #ac904f;
+  padding-top: 40px;
+  
+}
+
+.services > h1 {
+  grid-row: 1 ;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .painting {
-  background-color: #197500d3;
+  grid-row: 2;
+  background-color: #04229ad3;
 
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  margin: 20px auto;
-  margin-left: -0px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+ 
+  margin-left: 0px;
+  margin-top: -80px;
 
-  width: 150px;
-  height: 200px;
+  width: 85%;
+  height: 400px;
 
-  object-fit: fill;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-  width: 90%;
   opacity: 0.8;
 }
 
 .paint-descr {
-  border-style: solid;
+  grid-column: 1;
+  padding: 15px;
 
-  transform: skew(-20deg);
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
 }
 
-.paint-img {
-  border-style: solid;
-  object-fit: contain;
+.paint-img {  
+  grid-column: 2;
+  align-items: end;
+  border-style: dashed;
+  margin-right: 0px;
+
+  max-height: 400px;
+  max-width: auto;
+  
+
 }
 
 #paintImg {
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 
-  
 }
 
-.menu-selection {
+
+.drywalling {
+  grid-row: 3;
+  background-color: #04229ad3;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto;
+  margin-right: 0px;
+
+  width: 85%;
+  height: 250px;
+
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+}
+
+
+
+.painting {
+  grid-row: 3;
+  background-color: #04229ad3;
+
+  display: inline-grid;
+  grid-template-columns: auto auto;
+ 
+  margin-left: 0px;
+  margin-top: -80px;
+
+  width: 85%;
+  height: 400px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+}
+
+.paint-descr {
+  grid-column: 1;
+  padding: 15px;
+
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.paint-img {  
+  grid-column: 2;
+  align-items: end;
+  border-style: dashed;
+  margin-right: 0px;
+
+  max-height: 400px;
+  max-width: auto;
+  
+
+}
+
+#paintImg {
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* .menu-selection {
   display: flex;
   width: 85%;
   flex-direction: column;
@@ -340,28 +466,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     opacity: 0.8;
- }
+ } */
 
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.social-links a {
-  color: #4CAF50;
-  text-decoration: none;
-  margin: 0 10px;
-}
