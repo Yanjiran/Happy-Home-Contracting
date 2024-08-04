@@ -136,6 +136,8 @@ body {
 
   background-color: #ac904f;
   padding-top: 40px;
+
+  border-style: dotted;
   
 }
 
@@ -150,10 +152,10 @@ body {
   background-color: #04229ad3;
 
   display: inline-grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
  
   margin-left: 0px;
-  margin-top: -80px;
+  margin-top: -10px;
 
   width: 85%;
   height: 400px;
@@ -164,24 +166,22 @@ body {
 }
 
 .paint-descr {
-  grid-column: 1;
   padding: 15px;
+  
+  margin-top: 60px;
 
+  align-items: center;
   text-align: center;
   font-size: 1.4rem;
   color: white;
 }
 
 .paint-img {  
-  grid-column: 2;
   align-items: end;
-  border-style: dashed;
   margin-right: 0px;
 
-  max-height: 400px;
+  max-height: 500px;
   max-width: auto;
-  
-
 }
 
 #paintImg {
@@ -198,7 +198,7 @@ body {
   grid-row: 3;
   background-color: #04229ad3;
 
-  display: grid;
+  display: inline-grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   margin: 40px auto;
@@ -245,7 +245,6 @@ body {
 .paint-img {  
   grid-column: 2;
   align-items: end;
-  border-style: dashed;
   margin-right: 0px;
 
   max-height: 400px;
