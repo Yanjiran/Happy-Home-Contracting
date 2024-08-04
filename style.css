@@ -129,7 +129,7 @@ body {
 
 .services {
   display: grid;
-  padding-top: 0px;
+  padding-top: 1000px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   row-gap: 80px;
@@ -147,7 +147,7 @@ body {
   font-size: 2rem;
 }
 
-.painting {
+/* .painting {
   grid-row: 2;
   background-color: #04229ad3;
 
@@ -260,7 +260,7 @@ body {
   width: 100%;
   height: 100%;
 
-}
+} */
 
 
 footer {
