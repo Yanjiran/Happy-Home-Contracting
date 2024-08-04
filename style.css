@@ -38,7 +38,7 @@ body {
 }
 
 #logoTxt {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #3b82c9;
   -webkit-text-stroke-color: #2c3fa0;
   -webkit-text-stroke-width: 1px;
@@ -47,6 +47,7 @@ body {
 .nav-links {
   list-style: none;
   font-size: 1.2rem;
+  
 }
 
 .nav-links li {
@@ -67,7 +68,7 @@ body {
 
 .hero-content h1 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px; 
   -webkit-text-stroke-width: 0.06rem;
   -webkit-text-stroke-color: rgba(34, 34, 34, 0.654);
@@ -82,7 +83,7 @@ body {
   color: #eae8e8;
   -webkit-text-stroke-width: 0.06rem;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 30px;
 }
 
@@ -103,7 +104,7 @@ body {
   color: #aeaeae;
   -webkit-text-stroke-width: 0.09rem;
   -webkit-text-stroke-color: rgba(29, 29, 2, 0.495); 
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 1.2rem;
 }
 
@@ -131,65 +132,172 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-  row-gap: 80px;
-
+  row-gap: 60px;
+  
   background-color: #ac904f;
   padding-top: 40px;
-
-  border-style: dotted;
-  
+  padding-bottom: 80px;
 }
 
-.services > h1 {
-  border-style: dotted;
-
-  grid-row: 1 ;
+.services > h2 {
+  margin-bottom: -50px;
+  grid-row: 1;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #072dd9eb;
+
 }
 
 .painting {
-  grid-row: 2;
-  background-color: #04229ad3;
+  grid-row: 3;
+  background-color: #04229a9d;
+  margin-left: auto;
+  margin-right: 40px;
   width: 85%;
   height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+
 
   display: inline-grid;
-  grid-template-columns: 1fr auto;
-
+  grid-template-columns: auto 1fr;
 }
 .paint-descr {
-  border-style: dotted;
+  color: #ffffff;
   align-content: center;
   text-align: center;
-  
-  padding: 10px;
+  font-size: 1.4rem;
+   
+  padding: 50px;
 }
 .paint-img {
-  border-style: dashed;
+  max-height: 500px;
+  max-width: auto;
+}
+#paintImg {
+  display: block;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 
 }
 
 .drywalling {
-  grid-row: 3;
-  background-color: #04229ad3;
+  grid-row: 2;
+  background-color: #04229a9d;
+  margin-left: 40px;
+  margin-right: auto;
   width: 85%;
   height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+
 
   display: inline-grid;
   grid-template-columns: 1fr auto;
+}
+.drywall-descr {
+  color: #ffffff;
+  align-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+   
+  padding: 50px;
+}
+.drywall-img {
+  max-height: 400px;
+  max-width: auto;
+}
+#drywallImg {
+  display: block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .landscaping {
   grid-row: 4;
-  background-color: #04229ad3;
+  background-color: #04229a9d;
+  margin-left: 40px;
+  margin-right: auto;
   width: 85%;
   height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+
 
   display: inline-grid;
   grid-template-columns: 1fr auto;
 }
+.landscape-descr {
+  color: #ffffff;
+  align-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+   
+  padding: 50px;
 
+}
+.landscape-img {
+  max-height: 500px;
+  max-width: auto;
+}
+#landscapeImg {
+  display: block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us {
+  background-color: #0b0936;
+}
+#contactHead {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.contact-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 80px;
+  padding-top: 30px;
+  color: #ffffff;
+}
+.contact-us-descr {
+  grid-column: 1;
+  background-color: #3a3a3af5;
+  margin-left: 50px;
+  padding: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 3rem;
+}
+#contactUsDescrSpan {
+  color: #cf9c04;
+}
+.contact-us-number {
+  background-color: #2a2f42cc;
+  grid-column: 2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 50px;
+  text-align: center;
+  align-content: center;
+  font-size: 2.8rem;
+}
+#callUsTdySpan {
+  color: #3578ff;
+}
 
 /* .painting {
   grid-row: 2;
