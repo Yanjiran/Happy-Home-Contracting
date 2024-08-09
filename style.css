@@ -275,12 +275,20 @@ footer {
   .painting, .drywalling, .landscaping {
     display: flex;
     width: 90%;
-    height: 300px;
+    height: 400px;
+  }
+  .paint-descr, .drywall-descr, .landscape-descr {
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px;
+    margin-top: 40px;
   }
 
   .paint-img, .drywall-img, .landscape-img {
 
-    width: 60%;
+    width: 50%;
   }
 
   .contact-us-content {
